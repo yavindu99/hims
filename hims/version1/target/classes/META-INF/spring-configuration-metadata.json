@@ -1,0 +1,12 @@
+{
+  "groups": [
+    {
+      "name": "version1.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "hims.version1.config.Version1Config",
+      "sourceMethod": "dataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

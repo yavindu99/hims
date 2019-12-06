@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "module",
+      "type": "hims.admical.AdmicalProperties",
+      "sourceType": "hims.admical.AdmicalProperties"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "hims.admical.AdmicalConfig",
+      "sourceMethod": "dataSource()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "module.name",
+      "type": "java.lang.String",
+      "sourceType": "hims.admical.AdmicalProperties"
+    },
+    {
+      "name": "module.short-name",
+      "type": "java.lang.String",
+      "sourceType": "hims.admical.AdmicalProperties"
+    }
+  ],
+  "hints": []
+}

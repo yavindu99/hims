@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "spring.data.mongodb",
+      "type": "hims.patunscal.PatunscalProperties",
+      "sourceType": "hims.patunscal.PatunscalProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.data.mongodb.database",
+      "type": "java.lang.String",
+      "sourceType": "hims.patunscal.PatunscalProperties"
+    },
+    {
+      "name": "spring.data.mongodb.host",
+      "type": "java.lang.String",
+      "sourceType": "hims.patunscal.PatunscalProperties"
+    },
+    {
+      "name": "spring.data.mongodb.port",
+      "type": "java.lang.Integer",
+      "sourceType": "hims.patunscal.PatunscalProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

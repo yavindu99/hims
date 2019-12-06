@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "login.version2.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "hims.login.version2.config.LoginVersion2Config",
+      "sourceMethod": "dataSource()"
+    },
+    {
+      "name": "module",
+      "type": "hims.login.version2.LoginVersion2Properties",
+      "sourceType": "hims.login.version2.LoginVersion2Properties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "module.name",
+      "type": "java.lang.String",
+      "sourceType": "hims.login.version2.LoginVersion2Properties"
+    },
+    {
+      "name": "module.short-name",
+      "type": "java.lang.String",
+      "sourceType": "hims.login.version2.LoginVersion2Properties"
+    }
+  ],
+  "hints": []
+}

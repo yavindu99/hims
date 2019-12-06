@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>common</module>
+        <module>admical</module>
+        <module>patunscal</module>
+        <module>version1</module>
+        <module>login.version2</module>
+        <module>version2</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.5.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.loonslab.lunar.hims</groupId>
+    <artifactId>hims</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>hims</name>
+    <description>Health Information Management System version 3</description>
+
+    <properties>
+        <start-class>hims.login.version2.Initializer</start-class>
+        <java.version>12.0.2</java.version>
+        <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
+        <mysql.version>8.0.16</mysql.version>
+        <junit.version>4.12</junit.version>
+        <mockito.version>3.1.0</mockito.version>
+        <spring-cloud.version>2.1.4.RELEASE</spring-cloud.version>
+        <maven-compiler.version>3.8.1</maven-compiler.version>
+        <compiler-source.version>1.8</compiler-source.version>
+        <compiler-target.version>1.8</compiler-target.version>
+        <jacoco.version>0.8.3</jacoco.version>
+        <common-module.version>0.0.1-SNAPSHOT</common-module.version>
+        <admical-module.version>0.0.1-SNAPSHOT</admical-module.version>
+        <patunscal-module.version>0.0.1-SNAPSHOT</patunscal-module.version>
+        <login-version2-module.version>0.0.1-SNAPSHOT</login-version2-module.version>
+        <version2-module.version>0.0.1-SNAPSHOT</version2-module.version>
+        <version1-module.version>0.0.1-SNAPSHOT</version1-module.version>
+    </properties>
+
+   <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-tomcat</artifactId>
+                <version>${spring-boot.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-mongodb</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-oauth2</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-security</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
+<!--                <version>${spring-cloud.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+            <dependency>
+                <groupId>com.loonslab.lunar.hims</groupId>
+                <artifactId>common</artifactId>
+                <version>${common-module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.loonslab.lunar.hims</groupId>
+                <artifactId>admical</artifactId>
+                <version>${admical-module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.loonslab.lunar.hims</groupId>
+                <artifactId>patunscal</artifactId>
+                <version>${patunscal-module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.loonslab.lunar.hims</groupId>
+                <artifactId>version2</artifactId>
+                <version>${version2-module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.loonslab.lunar.hims</groupId>
+                <artifactId>version1</artifactId>
+                <version>${version1-module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.loonslab.lunar.hims</groupId>
+                <artifactId>login.version2</artifactId>
+                <version>${login-version2-module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <build>
+        <finalName>${artifactId}</finalName>
+        <plugins>
+
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--            </plugin>-->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler.version}</version>
+                <configuration>
+                    <source>${compiler-source.version}</source>
+                    <target>${compiler-target.version}</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>target/jacoco.exec</dataFile>
+                            <outputDirectory>target/jacoco-ut</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

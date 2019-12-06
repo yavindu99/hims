@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "hims.common.CommonProperties",
+      "sourceType": "hims.common.CommonProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.locale",
+      "type": "java.lang.String",
+      "sourceType": "hims.common.CommonProperties"
+    },
+    {
+      "name": "app.name",
+      "type": "java.lang.String",
+      "sourceType": "hims.common.CommonProperties"
+    },
+    {
+      "name": "app.short-name",
+      "type": "java.lang.String",
+      "sourceType": "hims.common.CommonProperties"
+    }
+  ],
+  "hints": []
+}
